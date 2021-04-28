@@ -33,7 +33,7 @@ public class MessagingServlet extends HttpServlet {
 	}
 
 	/**
-	 * HTTP GET
+	 * Handle HTTP GET
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		response.setContentType("application/json");
@@ -42,7 +42,7 @@ public class MessagingServlet extends HttpServlet {
 	}
 	
 	/**
-	 * HTTP POST
+	 * Handle HTTP POST
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String rawBody = request.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
